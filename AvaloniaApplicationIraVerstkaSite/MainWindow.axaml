@@ -12,7 +12,7 @@
 		<Style Selector="Grid > Grid">
 			<Setter Property="ZIndex" Value="9" />
 		</Style>
-		<Style Selector="StackPanel > Button">
+		<Style Selector="Grid > Grid > StackPanel > Button">
 			<Setter Property="Foreground" Value="Black" />
 			<Setter Property="BorderThickness" Value="2" />
 			<Setter Property="Background" Value="Transparent" />
@@ -20,21 +20,20 @@
 			<Setter Property="CornerRadius" Value="800" />
 		</Style>
 		
-		<Style Selector="Menu > StackPanel > Button">
+		<Style Selector="Grid > Grid > StackPanel > Button:pointerover  /template/ ContentPresenter">
 			<Setter Property="Background" Value="Transparent"/>
-		</Style>
-		
-		<Style Selector="Menu > Button:pointerover  /template/ ContentPresenter">
-			<Setter Property="Background" Value="Transparent"/>
-			<Setter Property="Foreground" Value="#615fab"/>
+			<Setter Property="Foreground" Value="Black" />
+			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="BorderBrush" Value="Black" />
+			<Setter Property="CornerRadius" Value="800" />
 		</Style>
 
-		<Style Selector="Menu > TabStrip > TabItem">
+		<Style Selector="Grid > Grid > TabStrip > TabItem">
 			<Setter  Property="Background" Value="Transparent"/>
 			<Setter Property="ZIndex" Value="3"/>
 		</Style>
 		
-		<Style Selector="Menu > TabStrip > TabItem:pointerover  /template/ ContentPresenter">
+		<Style Selector="Grid > Grid > TabStrip > TabItem:pointerover  /template/ ContentPresenter">
 			<Setter Property="Background" Value="Transparent"/>
 			<Setter Property="Foreground" Value="#615fab"/>
 		</Style>
@@ -121,7 +120,7 @@
 			</TabStrip>
 
 
-			<StackPanel x:Name="#korzina"
+			<StackPanel
 				  Cursor="Hand"
 				  VerticalAlignment="Top"
 				  HorizontalAlignment="Right"
@@ -129,7 +128,7 @@
 				<Button Content="КОРЗИНА 0"
 						  FontSize="18"
 						  FontWeight="SemiBold"
-						  Height="60"
+						  Height="60" IsEnabled="True"
 						VerticalContentAlignment="Center"
 						HorizontalContentAlignment="Center"
 						Width="180"/>
