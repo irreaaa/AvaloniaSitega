@@ -1,0 +1,445 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1980" d:DesignHeight="1080"
+        x:Class="AvaloniaApplicationIraVerstkaSite.MainWindow"
+        Title="AvaloniaApplicationIraVerstkaSite"
+		>
+
+	<Window.Styles>
+
+		<!--header-->
+		<Style Selector="Menu">
+			<Setter Property="Foreground" Value="Transparent" />
+			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderBrush" Value="Black" />
+			<Setter Property="CornerRadius" Value="800" />
+		</Style>
+		<Style Selector="Menu:pointerover  /template/ ContentPresenter">
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="Background" Value="Transparent" />
+		</Style>
+		<Style Selector="StackPanel#Navbar > StackPanel#Header > Button">
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Foreground" Value="#615fab"/>
+		</Style>
+
+		<!--<Style Selector="StackPanel > Panel > StackPanel > Button">
+			<Setter  Property="Background" Value="Red"/>
+		</Style>-->
+		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Foreground" Value="#615fab"/>
+		</Style>
+		
+		<!--/header-->
+
+		<!--чб в фото и раковины-->
+		<Style Selector="Panel > Image:nth-child(1)">
+			<Setter Property="ZIndex" Value="1"/>
+			<Setter Property="Opacity" Value="1"/>
+		</Style>
+
+		<Style Selector="Panel > Image:nth-child(2)">
+			<Setter Property="ZIndex" Value="0"/>
+			<Setter Property="Opacity" Value="0"/>
+		</Style>
+		<Style Selector="Panel:pointerover > Image:nth-child(1)">
+			<Setter Property="Opacity" Value="0"/>
+		</Style>
+
+		<Style Selector="Panel:pointerover > Image:nth-child(2)">
+			<Setter Property="Opacity" Value="1"/>
+		</Style>
+		<Style Selector="StackPanel > StackPanel#Header">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Transitions">
+
+			</Setter>
+		</Style>
+		<!--/чб в фото и раковины-->
+		
+		<!--старый стиль к навбару 
+		<Style Selector="StackPanel#Navbar > StackPanel#Header > Button">
+			<Setter Property="Background" Value="Transparent"/>
+		</Style>
+		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Foreground" Value="#615fab"/>
+		</Style>
+
+		--><!--<Style Selector="StackPanel > Panel > StackPanel > Button">
+			<Setter  Property="Background" Value="Red"/>
+		</Style>--><!--
+		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+			<Setter Property="Background" Value="Transparent"/>
+			<Setter Property="Foreground" Value="#615fab"/>
+		</Style>-->
+
+		<!--в каталог-->
+		<Style Selector="StackPanel > Panel > Button">
+			<Setter Property="Foreground" Value="Black" />
+			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderBrush" Value="Black" />
+			<Setter Property="CornerRadius" Value="800" />
+		</Style>
+		<Style Selector="StackPanel > Panel > Button:pointerover  /template/ ContentPresenter">
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="Background" Value="#615fab" />
+		</Style>
+		<!--/в каталог-->
+		
+	</Window.Styles>
+	<Grid Background="#F7F9EF">
+		<Menu Margin="30" x:Name="Navbar" VerticalAlignment="Top" >
+			<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sitega.png"
+               Width="160"
+               VerticalAlignment="Top"
+               Grid.Column="0"
+               HorizontalAlignment="Left"
+			   ZIndex="2"
+			   />
+	
+
+		<StackPanel x:Name="Header"
+					Orientation="Horizontal" 
+					HorizontalAlignment="Center" 
+					VerticalAlignment="Top"
+					ZIndex="2"
+					>
+			<Button Content="КАТАЛОГ" 
+					FontFamily="Wellington" 
+					Margin="10"
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="КАСТОМИЗАЦИЯ" 
+					FontFamily="Wellington" 
+					Margin="10"
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="О КОМПАНИИ" 
+					FontFamily="Wellington" 
+					Margin="10"
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="ПРОЕКТЫ" 
+					FontFamily="Wellington" 
+					Margin="10"
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="КОНТАКТЫ" 
+					FontFamily="Wellington" 
+					Margin="10"
+					FontSize="16"
+					FontWeight="SemiBold"/>
+		</StackPanel>
+
+
+		<StackPanel
+			  Cursor="Hand" 
+			  VerticalAlignment="Top" 
+			  HorizontalAlignment="Right" 
+			  Grid.Column="2"
+			  ZIndex="2">
+			<Button Content="КОРЗИНА 0" 
+					  FontSize="16" 
+					  FontWeight="SemiBold"
+					  Height="60"/>
+		</StackPanel>
+
+			<!--<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sitega.png"
+               Width="160"
+               VerticalAlignment="Top"
+               Grid.Column="0"
+               HorizontalAlignment="Left"
+			   Margin="30"
+			   ZIndex="2"
+			   />
+
+
+			<StackPanel x:Name="Header"
+						Orientation="Horizontal"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Top"
+						Grid.Column="1"
+						Margin="30"
+						ZIndex="2"
+					>
+				<Button Content="КАТАЛОГ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="КАСТОМИЗАЦИЯ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="О КОМПАНИИ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="ПРОЕКТЫ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="КОНТАКТЫ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+			</StackPanel>
+
+
+			<Menu FontFamily="Wellington"
+				  Cursor="Hand"
+				  VerticalAlignment="Top"
+				  HorizontalAlignment="Right"
+				  Grid.Column="2"
+				  Margin="40"
+				  ZIndex="2">
+				<MenuItem Header="КОРЗИНА 0"
+						  FontSize="16"
+						  FontWeight="SemiBold"/>
+			</Menu>-->
+		</Menu>
+		
+		<StackPanel>
+			<Border MaxWidth="1970" MaxHeight="1070">
+				<ScrollViewer VerticalScrollBarVisibility="Auto">
+					<StackPanel Orientation="Vertical">
+						<StackPanel>
+							<!--<Panel>
+								<StackPanel>
+								<Button Content="Sitéga"
+									FontFamily="Wellington"
+									FontSize="460"
+									Height="560"
+									HorizontalAlignment="Center"
+									VerticalAlignment="Center"/>
+								</StackPanel>
+							</Panel>-->
+							<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sitega.png"
+								   Width="1350"
+								   VerticalAlignment="Center"
+								   Margin="0 150 0 0"/>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal"
+									VerticalAlignment="Center"
+									Margin="25">
+							<Panel>
+								<Button Content="В КАТАЛОГ                                   🡥"
+										FontFamily="Wellington"
+										FontSize="20"
+										FontWeight="SemiBold"
+										Height="60"
+										Width="350"
+										HorizontalAlignment="Left"
+										VerticalContentAlignment="Center"
+										HorizontalContentAlignment="Center"/>
+							</Panel>
+							<Image />
+							<StackPanel Orientation="Vertical">
+								<TextBlock Text="Откройте для себя нашу коллекцию "
+									   FontFamily="Wellington"
+									   HorizontalAlignment="Left"
+									   FontSize="17"
+									   FontWeight="SemiBold"
+										   Margin="200 0">
+								</TextBlock>
+								<TextBlock Text="уникальных дизайнерских раковин"
+									   FontFamily="Wellington"
+									   HorizontalAlignment="Left"
+									   FontSize="17"
+									   FontWeight="SemiBold"
+										   Margin="200 0">
+								</TextBlock>
+								<TextBlock Text="ручной работы"
+									   FontFamily="Wellington"
+									   HorizontalAlignment="Left"
+									   FontSize="17"
+									   FontWeight="SemiBold"
+										   Margin="200 0">
+								</TextBlock>
+							</StackPanel>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+							<StackPanel Orientation="Vertical">
+								<Panel>
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/osno430bw.png"
+									   VerticalAlignment="Top"
+									   Margin="15"/>
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/osno430.png"
+										Margin="15">
+									</Image>
+								</Panel>
+								<Rectangle Width="575"
+										   Height="1"
+										   Fill="Black"/>
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="OSNO 430"
+											   Margin="20"
+											   FontSize="18"
+											   />
+									<TextBlock Text="🡥"
+											   HorizontalAlignment="Right"
+											   Margin="450 20 20 20"
+											   FontSize="18"/>
+								</StackPanel>
+							</StackPanel>
+							<StackPanel Orientation="Vertical">
+								<Panel>
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/osno420bw.png"
+										VerticalAlignment="Top"
+										Margin="15"/>
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/osno420.png"
+										VerticalAlignment="Top"
+										Margin="15">
+									</Image>
+								</Panel>
+								<Rectangle Width="415"
+										   Height="1"
+										   Fill="Black"/>
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="0"
+											   Margin="20"
+											   FontSize="18"
+											   />
+									<TextBlock Text="🡥"
+											   HorizontalAlignment="Right"
+											   Margin="285 20 20 20"
+											   FontSize="18"/>
+								</StackPanel>
+							</StackPanel>
+							<StackPanel Orientation="Vertical">
+								<Panel>
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/osno460bw.png"
+										VerticalAlignment="Top"
+										Margin="15" />
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/osno460.png"
+										Margin="15">
+									</Image>
+								</Panel>
+								<Rectangle Width="785"
+											   Height="1"
+											   Fill="Black"/>
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="OSNO 460"
+											   Margin="20"
+											   FontSize="18"
+											   />
+									<TextBlock Text="🡥"
+											   HorizontalAlignment="Right"
+											   Margin="650 20 20 20"
+											   FontSize="18"/>
+								</StackPanel>
+							</StackPanel>
+						</StackPanel>
+						<TextBlock Text="Современное"
+								   Margin="40 100 0 0"
+								   FontSize="100"
+								   FontWeight="SemiBold"/>
+						<TextBlock Text="решение для ванной"
+								   Margin="40 0 0 40"
+								   FontSize="100"
+								   FontWeight="SemiBold"/>
+						<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+							<StackPanel Orientation="Vertical">
+								<StackPanel Orientation="Vertical">
+									<Panel>
+										<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/verma420.png"
+											VerticalAlignment="Top"
+											Margin="15" />
+										<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/verma420.png"
+											Margin="15">
+										</Image>
+									</Panel>
+									<Rectangle Width="385"
+												   Height="1"
+												   Fill="Black"/>
+									<StackPanel Orientation="Horizontal">
+										<TextBlock Text="VERMA 420"
+												   Margin="20"
+												   FontSize="18"/>
+										<TextBlock Text="🡥"
+												   HorizontalAlignment="Right"
+												   Margin="240 20 20 20"
+												   FontSize="18"/> 
+									</StackPanel>
+									<StackPanel HorizontalAlignment="Left">
+										<TextBlock Text="Мы считаем, что каждый дом должен быть"
+									   FontFamily="Wellington"
+									   HorizontalAlignment="Left"
+									   FontSize="19"
+									   FontWeight="SemiBold"
+										   Margin="200 0">
+										</TextBlock>
+										<TextBlock Text="отражением личности его владельцев, поэтому"
+										   FontFamily="Wellington"
+										   HorizontalAlignment="Left"
+										   FontSize="19"
+										   FontWeight="SemiBold"
+											   Margin="200 0">
+										</TextBlock>
+										<TextBlock Text="мы предлагаем широкий выбор уникальных и"
+										   FontFamily="Wellington"
+										   HorizontalAlignment="Left"
+										   FontSize="19"
+										   FontWeight="SemiBold"
+											   Margin="200 0">
+										</TextBlock>
+										<TextBlock Text="красивых раковин, отвечающих самым разным"
+										   FontFamily="Wellington"
+										   HorizontalAlignment="Left"
+										   FontSize="19"
+										   FontWeight="SemiBold"
+											   Margin="200 0">
+										</TextBlock>
+										<TextBlock Text="стилям и предпочтениям"
+										   FontFamily="Wellington"
+										   HorizontalAlignment="Left"
+										   FontSize="19"
+										   FontWeight="SemiBold"
+											   Margin="200 0">
+										</TextBlock>
+									</StackPanel>
+								</StackPanel>
+							</StackPanel>
+							<StackPanel Orientation="Vertical">
+								<Panel>
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sayma570.png"
+										VerticalAlignment="Top"
+										Margin="15" />
+									<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sayma570a.png"
+										Margin="15">
+									</Image>
+								</Panel>
+								<Rectangle Width="790"
+											   Height="1"
+											   Fill="Black"/>
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="SAYMA 570"
+											   Margin="20"
+											   FontSize="18"
+											   />
+									<TextBlock Text="🡥"
+											   HorizontalAlignment="Right"
+											   Margin="660 20 20 20"
+											   FontSize="18"/>
+								</StackPanel>
+							</StackPanel>
+						</StackPanel>
+					</StackPanel>
+				</ScrollViewer>
+			</Border>
+		</StackPanel>
+	</Grid>
+</Window>

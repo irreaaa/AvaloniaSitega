@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\prdb\\source\\repos\\AvaloniaApplicationIraVerstkaSite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD61470D-E92E-43A6-B904-5FFAC13DD870}|AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite.csproj|c:\\users\\prdb\\source\\repos\\avaloniaapplicationiraverstkasite\\avaloniaapplicationiraverstkasite\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{CD61470D-E92E-43A6-B904-5FFAC13DD870}|AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite.csproj|solutionrelative:avaloniaapplicationiraverstkasite\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD61470D-E92E-43A6-B904-5FFAC13DD870}|AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite.csproj|c:\\users\\prdb\\source\\repos\\avaloniaapplicationiraverstkasite\\avaloniaapplicationiraverstkasite\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD61470D-E92E-43A6-B904-5FFAC13DD870}|AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite.csproj|solutionrelative:avaloniaapplicationiraverstkasite\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\source\\repos\\AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\source\\repos\\AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml*",
+              "RelativeToolTip": "AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-15T08:32:33.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\source\\repos\\AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\source\\repos\\AvaloniaApplicationIraVerstkaSite\\AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml.cs",
+              "RelativeToolTip": "AvaloniaApplicationIraVerstkaSite\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:32:32.261Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
