@@ -8,31 +8,33 @@
 		>
 
 	<Window.Styles>
-
 		<!--header-->
-		<Style Selector="Menu">
-			<Setter Property="Foreground" Value="Transparent" />
+		<Style Selector="Grid > Grid">
+			<Setter Property="ZIndex" Value="9" />
+		</Style>
+		<Style Selector="StackPanel > Button">
+			<Setter Property="Foreground" Value="Black" />
 			<Setter Property="BorderThickness" Value="2" />
 			<Setter Property="Background" Value="Transparent" />
 			<Setter Property="BorderBrush" Value="Black" />
 			<Setter Property="CornerRadius" Value="800" />
 		</Style>
-		<Style Selector="Menu:pointerover  /template/ ContentPresenter">
-			<Setter Property="Foreground" Value="White"/>
-			<Setter Property="Background" Value="Transparent" />
-		</Style>
-		<Style Selector="StackPanel#Navbar > StackPanel#Header > Button">
+		
+		<Style Selector="Menu > StackPanel > Button">
 			<Setter Property="Background" Value="Transparent"/>
 		</Style>
-		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+		
+		<Style Selector="Menu > Button:pointerover  /template/ ContentPresenter">
 			<Setter Property="Background" Value="Transparent"/>
 			<Setter Property="Foreground" Value="#615fab"/>
 		</Style>
 
-		<!--<Style Selector="StackPanel > Panel > StackPanel > Button">
-			<Setter  Property="Background" Value="Red"/>
-		</Style>-->
-		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+		<Style Selector="Menu > TabStrip > TabItem">
+			<Setter  Property="Background" Value="Transparent"/>
+			<Setter Property="ZIndex" Value="3"/>
+		</Style>
+		
+		<Style Selector="Menu > TabStrip > TabItem:pointerover  /template/ ContentPresenter">
 			<Setter Property="Background" Value="Transparent"/>
 			<Setter Property="Foreground" Value="#615fab"/>
 		</Style>
@@ -49,6 +51,7 @@
 			<Setter Property="ZIndex" Value="0"/>
 			<Setter Property="Opacity" Value="0"/>
 		</Style>
+		
 		<Style Selector="Panel:pointerover > Image:nth-child(1)">
 			<Setter Property="Opacity" Value="0"/>
 		</Style>
@@ -56,16 +59,15 @@
 		<Style Selector="Panel:pointerover > Image:nth-child(2)">
 			<Setter Property="Opacity" Value="1"/>
 		</Style>
+		
 		<Style Selector="StackPanel > StackPanel#Header">
 			<Setter Property="Background" Value="Transparent"/>
-			<Setter Property="Transitions">
-
-			</Setter>
+			
 		</Style>
 		<!--/чб в фото и раковины-->
 		
 		<!--старый стиль к навбару 
-		<Style Selector="StackPanel#Navbar > StackPanel#Header > Button">
+		<Style Selector="StackPanel#Navbar > StackPanel#Header > Button"
 			<Setter Property="Background" Value="Transparent"/>
 		</Style>
 		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
@@ -93,125 +95,46 @@
 			<Setter Property="Foreground" Value="White"/>
 			<Setter Property="Background" Value="#615fab" />
 		</Style>
-		<!--/в каталог-->
-		
 	</Window.Styles>
 	<Grid Background="#F7F9EF">
-		<Menu Margin="30" x:Name="Navbar" VerticalAlignment="Top" >
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Grid>
 			<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sitega.png"
                Width="160"
                VerticalAlignment="Top"
                Grid.Column="0"
                HorizontalAlignment="Left"
-			   ZIndex="2"
-			   />
-	
-
-		<StackPanel x:Name="Header"
-					Orientation="Horizontal" 
-					HorizontalAlignment="Center" 
-					VerticalAlignment="Top"
-					ZIndex="2"
-					>
-			<Button Content="КАТАЛОГ" 
-					FontFamily="Wellington" 
-					Margin="10"
-					FontSize="16"
-					FontWeight="SemiBold"/>
-			<Button Content="КАСТОМИЗАЦИЯ" 
-					FontFamily="Wellington" 
-					Margin="10"
-					FontSize="16"
-					FontWeight="SemiBold"/>
-			<Button Content="О КОМПАНИИ" 
-					FontFamily="Wellington" 
-					Margin="10"
-					FontSize="16"
-					FontWeight="SemiBold"/>
-			<Button Content="ПРОЕКТЫ" 
-					FontFamily="Wellington" 
-					Margin="10"
-					FontSize="16"
-					FontWeight="SemiBold"/>
-			<Button Content="КОНТАКТЫ" 
-					FontFamily="Wellington" 
-					Margin="10"
-					FontSize="16"
-					FontWeight="SemiBold"/>
-		</StackPanel>
-
-
-		<StackPanel
-			  Cursor="Hand" 
-			  VerticalAlignment="Top" 
-			  HorizontalAlignment="Right" 
-			  Grid.Column="2"
-			  ZIndex="2">
-			<Button Content="КОРЗИНА 0" 
-					  FontSize="16" 
-					  FontWeight="SemiBold"
-					  Height="60"/>
-		</StackPanel>
-
-			<!--<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sitega.png"
-               Width="160"
-               VerticalAlignment="Top"
-               Grid.Column="0"
-               HorizontalAlignment="Left"
-			   Margin="30"
-			   ZIndex="2"
+				   Cursor="Hand"
+				   Margin="30"
 			   />
 
+			<TabStrip HorizontalAlignment="Center" Margin="30">
 
-			<StackPanel x:Name="Header"
-						Orientation="Horizontal"
-						HorizontalAlignment="Center"
-						VerticalAlignment="Top"
-						Grid.Column="1"
-						Margin="30"
-						ZIndex="2"
-					>
-				<Button Content="КАТАЛОГ"
-						FontFamily="Wellington"
-						Margin="10"
-						FontSize="16"
-						FontWeight="SemiBold"/>
-				<Button Content="КАСТОМИЗАЦИЯ"
-						FontFamily="Wellington"
-						Margin="10"
-						FontSize="16"
-						FontWeight="SemiBold"/>
-				<Button Content="О КОМПАНИИ"
-						FontFamily="Wellington"
-						Margin="10"
-						FontSize="16"
-						FontWeight="SemiBold"/>
-				<Button Content="ПРОЕКТЫ"
-						FontFamily="Wellington"
-						Margin="10"
-						FontSize="16"
-						FontWeight="SemiBold"/>
-				<Button Content="КОНТАКТЫ"
-						FontFamily="Wellington"
-						Margin="10"
-						FontSize="16"
-						FontWeight="SemiBold"/>
-			</StackPanel>
+				<TabItem Header="КАТАЛОГ" Foreground="Black" FontWeight="SemiBold" FontSize="17" Cursor="Hand"/>
+				<TabItem Header="КАСТОМИЗАЦИЯ" Foreground="Black" FontWeight="SemiBold" FontSize="17" Cursor="Hand"/>
+				<TabItem Header="О КОМПАНИИ" Foreground="Black" FontWeight="SemiBold" FontSize="17" Cursor="Hand"/>
+				<TabItem Header="КАТАЛОГ" Foreground="Black" FontWeight="SemiBold" FontSize="17" Cursor="Hand"/>
+				<TabItem Header="КОНТАКТЫ" Foreground="Black" FontWeight="SemiBold" FontSize="17" Cursor="Hand"/>
+			</TabStrip>
 
 
-			<Menu FontFamily="Wellington"
+			<StackPanel x:Name="#korzina"
 				  Cursor="Hand"
 				  VerticalAlignment="Top"
 				  HorizontalAlignment="Right"
-				  Grid.Column="2"
-				  Margin="40"
-				  ZIndex="2">
-				<MenuItem Header="КОРЗИНА 0"
-						  FontSize="16"
-						  FontWeight="SemiBold"/>
-			</Menu>-->
-		</Menu>
-		
+				  Margin="30">
+				<Button Content="КОРЗИНА 0"
+						  FontSize="18"
+						  FontWeight="SemiBold"
+						  Height="60"
+						VerticalContentAlignment="Center"
+						HorizontalContentAlignment="Center"
+						Width="180"/>
+			</StackPanel>
+		</Grid>
 		<StackPanel>
 			<Border MaxWidth="1970" MaxHeight="1070">
 				<ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -309,7 +232,7 @@
 										   Height="1"
 										   Fill="Black"/>
 								<StackPanel Orientation="Horizontal">
-									<TextBlock Text="0"
+									<TextBlock Text="0SNO 420"
 											   Margin="20"
 											   FontSize="18"
 											   />
@@ -443,3 +366,90 @@
 		</StackPanel>
 	</Grid>
 </Window>
+
+
+
+<!--<Image Source="C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite/sitega.png"
+               Width="160"
+               VerticalAlignment="Top"
+               Grid.Column="0"
+               HorizontalAlignment="Left"
+			   Margin="30"
+			   ZIndex="2"
+			   />
+
+
+			<StackPanel x:Name="Header"
+						Orientation="Horizontal"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Top"
+						Grid.Column="1"
+						Margin="30"
+						ZIndex="2"
+					>
+				<Button Content="КАТАЛОГ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="КАСТОМИЗАЦИЯ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="О КОМПАНИИ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="ПРОЕКТЫ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+				<Button Content="КОНТАКТЫ"
+						FontFamily="Wellington"
+						Margin="10"
+						FontSize="16"
+						FontWeight="SemiBold"/>
+			</StackPanel>
+
+
+			<Menu FontFamily="Wellington"
+				  Cursor="Hand"
+				  VerticalAlignment="Top"
+				  HorizontalAlignment="Right"
+				  Grid.Column="2"
+				  Margin="40"
+				  ZIndex="2">
+				<MenuItem Header="КОРЗИНА 0"
+						  FontSize="16"
+						  FontWeight="SemiBold"/>
+			</Menu>-->
+
+<!--<StackPanel	Orientation="Horizontal" 
+					HorizontalAlignment="Center" 
+					VerticalAlignment="Top"
+ 					ZIndex="2"
+					>
+			<Button Content="КАТАЛОГ" 
+					FontFamily="Wellington" 
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="КАСТОМИЗАЦИЯ" 
+					FontFamily="Wellington" 
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="О КОМПАНИИ" 
+					FontFamily="Wellington" 
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="ПРОЕКТЫ" 
+					FontFamily="Wellington" 
+					FontSize="16"
+					FontWeight="SemiBold"/>
+			<Button Content="КОНТАКТЫ" 
+					FontFamily="Wellington" 
+					FontSize="16"
+					FontWeight="SemiBold"/>
+		</StackPanel>-->

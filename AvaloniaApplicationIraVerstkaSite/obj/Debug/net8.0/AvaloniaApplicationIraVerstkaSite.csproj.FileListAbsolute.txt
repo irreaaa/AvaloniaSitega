@@ -124,3 +124,4 @@ C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplication
 C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite\obj\Debug\net8.0\Avalonia.C80E63AC.Up2Date
 C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite\obj\Debug\net8.0\AvaloniaApplicationIraVerstkaSite.genruntimeconfig.cache
 C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite\obj\Debug\net8.0\ref\AvaloniaApplicationIraVerstkaSite.dll
+C:\Users\prdb\source\repos\AvaloniaApplicationIraVerstkaSite\AvaloniaApplicationIraVerstkaSite\obj\Debug\net8.0\AvaloniaApplicationIraVerstkaSite.sourcelink.json
